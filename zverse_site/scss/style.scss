@@ -1,0 +1,580 @@
+@import"compass";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,900);
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+$darkgray: #464646;
+$lightgray: #ebebeb;
+$orange: #ff6d38;
+$blue: #a0bbcf;
+$darkblue: #18379c;
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
+a{
+	text-decoration:none;
+}
+.orangebutton{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $darkgray;
+		color:$orange;
+	}
+}
+.orangeoutline{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	border:2px solid $orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $orange;
+	}
+
+}
+
+.orangefill{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$orange;
+	border:2px solid $orange;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $orange;
+	}
+}
+.bluebutton{
+	padding: 4%;
+	color:white;
+	text-align:center;	
+	text-decoration:none;
+	background:$darkblue;
+	@include transition (background 0.3s);
+		a{
+			color:$orange;
+		}
+
+	&:hover{
+		background: $darkgray;
+		color:$orange;
+	}
+}
+a{
+	text-decoration:none;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+body{
+	background:url(../img/zverselogoblue.svg), $blue;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-attachment: fixed;
+	background-size:80%;
+	font-family: 'Lato', sans-serif;
+
+
+}
+header{
+	background:$darkgray;
+	padding-top:20px;
+		img{
+			float:left;
+			height:48px;
+			width:45%;
+			
+			vertical-align: baseline;
+			
+		}
+		.available{
+			float:right;
+			width:45%;
+			margin-right:10%;
+			color:white;
+			font-size:.8em;
+			text-align:right;
+			letter-spacing: 2px;
+			vertical-align:baseline;
+				.availablebutton{
+					padding:4%;
+					padding-right:0;
+					display:block;
+						a{
+							display:inline-block;
+							width:19%;
+						}
+						
+				}
+			
+				h3{
+					display:block;
+					margin-top:0;
+					margin-bottom:5px;
+				}
+		}
+		.layrheader{
+			display:block;
+			padding-top:20px;
+			color:white;
+			text-align:center;
+			font-size:.9em;
+			clear:both;
+				h1{
+					margin-top:0;
+					margin-bottom:10px;
+				}
+		}
+		
+}
+.wrapper{
+	width:90%;
+	margin:0 auto;
+}
+.maincontentbox{
+	background:$darkgray;
+	padding:5%;
+	margin: 40px 0;
+		ul{
+			display:block;
+			list-style:none;
+			padding:0;
+			margin-top:0;
+			margin-bottom:15px;
+				li{
+					display:inline-block;
+					width:24%;
+					text-align:center;	
+				}
+				a{
+					display:block;
+					color:white;
+					padding:10px,20px;
+					font-size:.8em;
+						&:hover{
+							color:$orange;
+						}
+				}
+		}
+}
+footer{
+	background:$darkgray;
+	color:$orange;
+	padding:30px 5%;
+
+		
+		ul{
+			display:block;
+			list-style:none;
+			padding:0;
+			display:block;
+			margin:0 auto;
+		}
+		li{
+			display:inline-block;
+			width:30%;
+			text-align:center;		
+		}
+		a{
+			color:$orange;
+				&:hover{
+					color:white;
+				}
+		}
+}
+
+// ***************Begin mobile specific styles beginning with login
+
+
+.maincontentbox{
+	margin-bottom:40px;
+	color:white;
+	padding-bottom:40px;
+		label{
+			display:block;
+			margin-bottom:5px;
+		}
+		input{
+			width:98%;
+			margin:10px auto;
+			color:black;
+		}
+		.loginbuttons{
+			display:block;
+			
+			margin-top:30px;
+				.orangebutton{
+					float:left;
+					width:39%;
+						&:first-child{
+							margin-right:3%;
+						}
+						&:hover{
+							background:$blue;
+						}
+				}
+		}
+
+}
+// ************** mobile for profile page
+
+
+.innercontent{
+	background:white;
+	padding:4%;
+	color:$darkgray;
+}
+.profilepicture{
+	padding:8%;
+	background:$darkgray;
+		.pictureinput{
+			display:block;
+		}
+		.choosefile{
+			-webkit-appearance: none;
+			
+    		border: none;
+    		color: white;
+    		padding: 4%;
+    		display:block;
+    		max-width:100%;
+    			&hover{
+    				background-color:$darkgray;
+    			}
+		}
+}
+.profileinput{
+	margin-top:20px;
+		label{
+			margin-bottom:8px;
+		}
+		input{
+			margin-top:5px;
+		}
+		select{
+			margin:20px auto;
+		}
+		.orangebutton{
+			border:none;
+			background:$orange;
+			color:white;
+			padding:20px auto;
+			display:block;
+			margin:20px auto;
+				&:hover{
+					background:$darkgray;
+				}
+		}
+}
+.portfoliolinks{
+	color:$darkgray;
+	margin-top:20px;
+}
+
+// ******** begin history at mobile
+
+.tablecontent{
+	font-size:.8em;
+	display:block;
+		tr{
+			display:block;
+
+		}
+		td{
+			margin-right:2%;
+			width:10%;
+		}
+		.orangebutton{
+			border:none;
+			background:$orange;
+			padding:4%;
+				&:hover{
+					background:$darkgray;
+				}
+		}
+}
+
+.additionalinformation{
+	background:white;
+	padding:4%;
+	margin-bottom:30px;
+		h1{
+			font-size:1.2em;
+			margin-top:10px;
+			padding-bottom:10px;
+			display:block;
+			border-bottom: 3px solid black;
+		}
+		.logoimage{
+			float:left;
+			width:20%;
+			margin-right:5%;
+		}
+		table{
+			font-size:.9em;
+		}
+		tr{
+			margin-bottom:15px;
+		}
+		th{
+			text-align:left;
+			
+		}
+		td{
+			padding-left:5%;
+		}
+}
+
+// ******* begin index projects styles at mobile
+
+.additionalinformation{
+	color:$darkgray;
+		.overview{
+			background:$lightgray;
+			padding:4%;
+				h5{
+					margin-top:0;
+				}
+		}
+		h5{
+			margin-bottom:5px;
+		}
+		ul{
+			list-style:none;
+			padding:0;
+		}
+		.overviewbuttons{
+			margin-top:25px;
+				label{
+					display:block;
+					margin-top:25px;
+				}
+				.bluebutton{
+					display:block;
+					margin-top:25px;
+				}
+		}
+}
+
+
+
+.messagereply{
+	background:$lightgray;
+	padding:4%;
+		h5{
+			margin-top:0;
+			
+		}
+		.emailcopy{
+			margin-bottom:10px;
+			
+				input{
+					height:15px;
+					display:inline-block;
+				}
+		}
+		input{
+			display:block;
+			height:80px;
+			width:100%;
+
+		}
+}
+// ********** begin mobile billing
+
+.billingbuttons{
+	text-align:center;
+	color:$darkgray;
+
+		a{
+			color:$darkgray;
+			padding:20px 10%;
+				&:hover{
+					color:$orange;
+				}
+		}
+
+		
+		.echeckbutton{
+			float:left;
+			width:50%;
+			background:white;
+			padding:20px 0;
+		}
+		.paypalbutton{
+			float:left;
+			width:50%;
+			background:white;
+			padding:20px 0;
+		}
+}
+
+.echeck{
+	background:white;
+	padding:4%;
+	color:$darkgray;
+		.orangebutton{
+			float:left;
+			width:25%;
+		}
+		img{
+			margin-top:20px;
+		}
+}
+.paypal{
+	background:white;
+	padding:4%;
+	padding-bottom:140px;
+	color:$darkgray;
+		select{
+			float:left;
+			display:block;
+			margin-bottom:20px;
+		}
+		.orangebutton{
+			width:25%;
+			float:right;
+			clear:both;
+		}
+}
+
+@media screen and (min-width: 700px) {
+
+header{
+		.layrheader{
+			padding-top:5px;
+		}
+		h1{
+			padding-bottom:20px;
+		}
+}
+.maincontentbox{
+		nav{
+			font-size:1.5em;
+		}
+}
+
+// ********* styles for login tablet
+.maincontentbox .loginbuttons .orangebutton{
+	width:22%;
+}
+
+// ********** styles for profile tablet
+
+.profilepicture{
+	float:left;
+	width:36%;
+	padding:2%;
+}
+.profileinput{
+	float:right;
+	width:50%;
+}
+
+.portfoliolinks{
+	background:$darkgray;
+	color:white;
+	padding:2%;
+	float:left;
+	width:36%;
+		.choosefile{
+			color:white;
+		}
+}
+
+// ******** project tablet
+
+.innercontent{
+	font-size:1em;
+	tbody{
+		display:block;
+	}
+	.tablecontent{
+			.orangebutton{
+				padding:7%;
+			}
+	}
+		th{
+			width:28%;
+			text-align:left;
+		}
+		td{
+			width:18%;
+		}
+
+}
+.overviewbuttons{
+	padding:20px 0;
+		label{
+			padding-top:20px;
+		}
+		.bluebutton{
+			width:27%;
+		}
+}
+.messagereply{
+		.bluebutton{
+			width:27%;
+		}
+}
+
+// ******* styles for history
+
+.tablecontent{
+	font-size:1em;
+		th{
+			width:28%;
+			text-align:left;
+			padding-right:3%;
+		}
+		td{
+			width:19%;
+			padding-right:3%;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
