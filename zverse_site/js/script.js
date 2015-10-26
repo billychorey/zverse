@@ -9,6 +9,11 @@
 
 
 
+	$(".billingbuttons").click(function(){
+        $(".payselect").toggleClass("graybackground");
+    });
+
+
 
     var billingbuttons = $(".billingbuttons a")
 
@@ -30,16 +35,17 @@
 
 
 
-	var detailsButton = $(".moreinfo a")
+	var detailsButton = $(".moreinfo")
 
-	var projectInfo = $(".projectsadditionalinformation div")
+	var projectInfo = $(".additionalinformation")
 
 	detailsButton.on("click", function( e ){
 
 	var className = $( this ).data( "page");
 
 	projectInfo.hide();
-	$( className ).fadeIn( 1000 );
+	
+	$( projectInfo ).fadeIn( 200 );
 
 	$( className ).show();
 

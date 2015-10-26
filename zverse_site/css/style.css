@@ -507,37 +507,42 @@ footer a:hover {
   background: white;
   padding: 20px 0;
 }
+/* line 441, ../scss/style.scss */
+.billingbuttons .graybackground {
+  background: #ebebeb;
+  color: #464646;
+}
 
-/* line 443, ../scss/style.scss */
+/* line 449, ../scss/style.scss */
 .echeck {
   background: white;
   padding: 4%;
   color: #464646;
 }
-/* line 447, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .echeck .orangebutton {
   float: left;
   width: 25%;
 }
-/* line 451, ../scss/style.scss */
+/* line 457, ../scss/style.scss */
 .echeck img {
   margin-top: 20px;
 }
 
-/* line 455, ../scss/style.scss */
+/* line 461, ../scss/style.scss */
 .paypal {
   background: white;
   padding: 4%;
   padding-bottom: 140px;
   color: #464646;
 }
-/* line 460, ../scss/style.scss */
+/* line 466, ../scss/style.scss */
 .paypal select {
   float: left;
   display: block;
   margin-bottom: 20px;
 }
-/* line 465, ../scss/style.scss */
+/* line 471, ../scss/style.scss */
 .paypal .orangebutton {
   width: 25%;
   float: right;
@@ -545,39 +550,39 @@ footer a:hover {
 }
 
 @media screen and (min-width: 700px) {
-  /* line 475, ../scss/style.scss */
+  /* line 481, ../scss/style.scss */
   header .layrheader {
     padding-top: 5px;
   }
-  /* line 478, ../scss/style.scss */
+  /* line 484, ../scss/style.scss */
   header h1 {
     padding-bottom: 20px;
   }
 
-  /* line 483, ../scss/style.scss */
+  /* line 489, ../scss/style.scss */
   .maincontentbox nav {
     font-size: 1.5em;
   }
 
-  /* line 489, ../scss/style.scss */
+  /* line 495, ../scss/style.scss */
   .maincontentbox .loginbuttons .orangebutton {
     width: 22%;
   }
 
-  /* line 495, ../scss/style.scss */
+  /* line 501, ../scss/style.scss */
   .profilepicture {
     float: left;
     width: 36%;
     padding: 2%;
   }
 
-  /* line 500, ../scss/style.scss */
+  /* line 506, ../scss/style.scss */
   .profileinput {
     float: right;
     width: 50%;
   }
 
-  /* line 505, ../scss/style.scss */
+  /* line 511, ../scss/style.scss */
   .portfoliolinks {
     background: #464646;
     color: white;
@@ -585,64 +590,83 @@ footer a:hover {
     float: left;
     width: 36%;
   }
-  /* line 511, ../scss/style.scss */
+  /* line 517, ../scss/style.scss */
   .portfoliolinks .choosefile {
     color: white;
   }
 
-  /* line 518, ../scss/style.scss */
+  /* line 524, ../scss/style.scss */
   .innercontent {
     font-size: 1em;
   }
-  /* line 520, ../scss/style.scss */
+  /* line 526, ../scss/style.scss */
   .innercontent tbody {
     display: block;
   }
-  /* line 524, ../scss/style.scss */
-  .innercontent .tablecontent .orangebutton {
-    padding: 7%;
+  /* line 531, ../scss/style.scss */
+  .innercontent .tablecontent .orangebutton a {
+    padding: 2%;
   }
-  /* line 528, ../scss/style.scss */
-  .innercontent th {
+  /* line 537, ../scss/style.scss */
+  .innercontent .tablecontent th {
     width: 28%;
     text-align: left;
   }
-  /* line 532, ../scss/style.scss */
-  .innercontent td {
-    width: 18%;
+  /* line 541, ../scss/style.scss */
+  .innercontent .tablecontent td {
+    width: 17.65%;
+  }
+  /* line 544, ../scss/style.scss */
+  .innercontent .tablecontent .bluebutton {
+    padding: 3%;
   }
 
-  /* line 537, ../scss/style.scss */
+  /* line 549, ../scss/style.scss */
   .overviewbuttons {
     padding: 20px 0;
   }
-  /* line 539, ../scss/style.scss */
+  /* line 551, ../scss/style.scss */
   .overviewbuttons label {
     padding-top: 20px;
   }
-  /* line 542, ../scss/style.scss */
+  /* line 554, ../scss/style.scss */
   .overviewbuttons .bluebutton {
     width: 27%;
   }
 
-  /* line 547, ../scss/style.scss */
+  /* line 559, ../scss/style.scss */
   .messagereply .bluebutton {
     width: 27%;
   }
 
-  /* line 554, ../scss/style.scss */
+  /* line 566, ../scss/style.scss */
   .tablecontent {
     font-size: 1em;
   }
-  /* line 556, ../scss/style.scss */
+  /* line 568, ../scss/style.scss */
   .tablecontent th {
     width: 28%;
     text-align: left;
     padding-right: 3%;
   }
-  /* line 561, ../scss/style.scss */
+  /* line 573, ../scss/style.scss */
   .tablecontent td {
     width: 19%;
     padding-right: 3%;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 584, ../scss/style.scss */
+  header .headerlogo {
+    width: 60%;
+  }
+  /* line 587, ../scss/style.scss */
+  header .available {
+    width: 17%;
+  }
+
+  /* line 592, ../scss/style.scss */
+  .maincontentbox {
+    padding-top: 20px;
   }
 }

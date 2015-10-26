@@ -438,6 +438,12 @@ footer{
 			background:white;
 			padding:20px 0;
 		}
+		.graybackground{
+			background:$lightgray;
+			color:$darkgray;
+}
+
+	
 }
 
 .echeck{
@@ -522,17 +528,23 @@ header{
 	}
 	.tablecontent{
 			.orangebutton{
-				padding:7%;
+					a{
+						padding:2%;
+					}
+				
+			}
+	
+			th{
+				width:28%;
+				text-align:left;
+			}
+			td{
+				width:17.65%;
+			}
+			.bluebutton{
+				padding:3%;
 			}
 	}
-		th{
-			width:28%;
-			text-align:left;
-		}
-		td{
-			width:18%;
-		}
-
 }
 .overviewbuttons{
 	padding:20px 0;
@@ -566,7 +578,21 @@ header{
 
 
 }
+@media screen and (min-width: 700px) {
 
+header{
+		.headerlogo{
+			width:60%;
+		}
+		.available{
+			width:17%;
+		}
+
+}
+.maincontentbox{
+	padding-top:20px;
+}
+}
 
 
 
