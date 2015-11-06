@@ -13,10 +13,13 @@
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
+    
     <header class="clearfix">
-        <div class="headerlogo">
-            <img src="img/zversehorizontal.svg">
+        
+        <div class="layrlogo">
+            <img src="img/layrlogo.svg">
         </div>
         
         
@@ -27,45 +30,95 @@
                 <a class="onoff orangeoutline orangefill" href="#">OFF</a>
             </div>
         </div>
-        <div class="layrheader">
-            <h1>LAYR ARTIST NETWORK</h1>
-
-        
+               
     </header>
+    
     <div class="wrapper">
+       
         <div class="maincontentbox">
             <nav>
-                <ul>
-                    <li><a href="index.html">PROJECTS</a></li>
+                <ul class="navigation">
+                    <li><a class="active" href="index.html">PROJECTS</a></li>
                     <li><a href="profile.html">PROFILE</a></li>
                     <li><a href="history.html">HISTORY</a></li>
                     <li><a href="billing.html">BILLING</a></li>
                 </ul>
             </nav>
-            <div class="innercontent">
             
-                <table class="tablecontent">
-                    <tr>
-                        <th>Project Title</th>
-                        <th>Due Date</th> 
-                        <th>Range</th>
-                    </tr>
-                    <tr>
-                        <td>3D Logo</td>
-                        <td>11/14/15</td>
-                        <td>10 hours</td>
-                        <td><a href="#" class="orangebutton moreinfo">Details</a></td> 
-                        <td><a href="#" class="orangebutton">Accept</a></td> 
-                        <td><a href="#" class="bluebutton">Decline</a></td>  
-                    </tr>
-                </table>
+            <div class="innercontent clearfix">
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>3D Logo</li>
+                            <li>11/14/15</li>
+                            <li>10 hours</li>
+                        </ul>
+                    </div>
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a href="#" class="">Details</a></li>
+                            <li><a href="#" class="">Accept</a></li>
+                            <li><a href="#" class="declinebutton">Decline</a></li>
+                        </ul>
+                    </div>                   
+                </div>
+
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>3D Logo</li>
+                            <li>11/14/15</li>
+                            <li>10 hours</li>
+                        </ul>
+                    </div>
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a href="#" class="">Details</a></li>
+                            <li><a href="#" class="">Accept</a></li>
+                            <li><a href="#" class="declinebutton">Decline</a></li>
+                        </ul>
+                    </div>                   
+                </div>
+
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>3D Logo</li>
+                            <li>11/14/15</li>
+                            <li>10 hours</li>
+                        </ul>
+                    </div>
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a href="#" class="">Details</a></li>
+                            <li><a href="#" class="">Accept</a></li>
+                            <li><a href="#" class="declinebutton">Decline</a></li>
+                        </ul>
+                    </div>                   
+                </div>
+                
             </div>
         </div>
         
         <div data-page=".d1" class="additionalinformation projectsadditionalinformation">
+            
             <h1>3D Logo</h1>
             
-
             <div class="overview">
                 <div class="overviewtext">
                     <h5>Project Due Date: <span>11/14/15</span></h5>
@@ -75,6 +128,7 @@
 
                     <p>Dynamically optimize fully researched results before stand-alone human capital. Completely predominate seamless synergy via interoperable methodologies. Dramatically provide access to fully researched infrastructures.</p>
                 </div>
+                
                 <div class="overviewbuttons">
                     <a href="#" class="orangebutton">Accept</a>
                     <a href="#" class="orangebutton">Decline</a>
@@ -94,7 +148,7 @@
                     <div class="message_content">
                         <p>Hey Folks,</p>
                         <p>Hope you all are doing well!</p>
-                        <p>Checking in to see if you have an official date to launch. We will need to change over one thing when your hosting guy changes everything over - so we'll need to know that day to schedule our work. (It's a database name change so that links go to the right place - that you can't do until the URL is live).</p>
+                        <p class="email_content">Checking in to see if you have an official date to launch. We will need to change over one thing when your hosting guy changes everything over - so we'll need to know that day to schedule our work. (It's a database name change so that links go to the right place - that you can't do until the URL is live).</p>
                     </div>
                 </li>
                 <li class="message_artist">
@@ -103,7 +157,7 @@
                     
                     <div class="message_content">
                         <p>Griswold,</p>
-                        <p>We are aiming for 8/5 or 8/6 for a soft launch. I am out of the office at a work conference for the remainder of the week. Franklin and I will both be in the office starting next week and should be able to add the finishing touches before launching later in the week. I expect that payment will follow directly after the launch, but I will confirm.</p>
+                        <p class="email_content">We are aiming for 8/5 or 8/6 for a soft launch. I am out of the office at a work conference for the remainder of the week. Franklin and I will both be in the office starting next week and should be able to add the finishing touches before launching later in the week. I expect that payment will follow directly after the launch, but I will confirm.</p>
                     </div>
                 </li>
             </ul>
@@ -119,10 +173,7 @@
                     <input type="file">
                     <input class="bluebutton" type="submit">
                 </form>
-            </div>
-
-
-            
+            </div>         
         </div>
     </div>
     <footer>

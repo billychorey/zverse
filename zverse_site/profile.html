@@ -13,33 +13,30 @@
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
     <header class="clearfix">
-    <div class="headerlogo">
-        <img src="img/zversehorizontal.svg">
-    </div>
-    
         
+        <div class="layrlogo">
+            <img src="img/layrlogo.svg">
+        </div>
+     
     <div class="available clearfix">
         <h3>AVAILABLE</h3>
         <div class="availablebutton">
             <a class="onoff orangeoutline" href="#">ON</a>
             <a class="onoff orangeoutline orangefill" href="#">OFF</a>
         </div>
-    </div>
-    <div class="layrheader">
-        <h1>LAYR ARTIST NETWORK</h1>
-    </div>     
-
-        
+    </div>       
     </header>
 
     <div class="wrapper">
         <div class="maincontentbox">
+            
             <nav>
                 <ul>
                     <li><a href="index.html">PROJECTS</a></li>
-                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a class="active" href="profile.html">PROFILE</a></li>
                     <li><a href="history.html">HISTORY</a></li>
                     <li><a href="billing.html">BILLING</a></li>
                 </ul>
@@ -48,7 +45,7 @@
             <div class="innercontent clearfix">
                 <div class="profilepicture">
                     <img src="img/profile.png">
-                    <input class="pictureinput"type="text" name="pictureFile">
+                    <p>Choose a profile picture.</p>
                     <input class="choosefile" type="file">
                 </div>
                 <form class="profileinput">
@@ -68,7 +65,7 @@
                     <input type="text" name="city">
                     
                    
-
+                    <label>State</label>
                     <select>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -123,7 +120,7 @@
                         <option value="WY">Wyoming</option>
                     </select>
 
-
+                    <label>Country</label>
                     <select>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">Åland Islands</option>
@@ -152,12 +149,11 @@
                         <option value="BM">Bermuda</option>
                         <option value="BT">Bhutan</option>
                         <option value="BO">Bolivia, Plurinational State of</option>
-                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="BQ">Bonaire</option>
                         <option value="BA">Bosnia and Herzegovina</option>
                         <option value="BW">Botswana</option>
                         <option value="BV">Bouvet Island</option>
                         <option value="BR">Brazil</option>
-                        <option value="IO">British Indian Ocean Territory</option>
                         <option value="BN">Brunei Darussalam</option>
                         <option value="BG">Bulgaria</option>
                         <option value="BF">Burkina Faso</option>
@@ -176,7 +172,7 @@
                         <option value="CO">Colombia</option>
                         <option value="KM">Comoros</option>
                         <option value="CG">Congo</option>
-                        <option value="CD">Congo, the Democratic Republic of the</option>
+                        <option value="CD">Congo</option>
                         <option value="CK">Cook Islands</option>
                         <option value="CR">Costa Rica</option>
                         <option value="CI">Côte d'Ivoire</option>
@@ -196,14 +192,13 @@
                         <option value="ER">Eritrea</option>
                         <option value="EE">Estonia</option>
                         <option value="ET">Ethiopia</option>
-                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FK">Falkland Islands</option>
                         <option value="FO">Faroe Islands</option>
                         <option value="FJ">Fiji</option>
                         <option value="FI">Finland</option>
                         <option value="FR">France</option>
                         <option value="GF">French Guiana</option>
                         <option value="PF">French Polynesia</option>
-                        <option value="TF">French Southern Territories</option>
                         <option value="GA">Gabon</option>
                         <option value="GM">Gambia</option>
                         <option value="GE">Georgia</option>
@@ -229,7 +224,7 @@
                         <option value="IS">Iceland</option>
                         <option value="IN">India</option>
                         <option value="ID">Indonesia</option>
-                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IR">Iran</option>
                         <option value="IQ">Iraq</option>
                         <option value="IE">Ireland</option>
                         <option value="IM">Isle of Man</option>
@@ -242,11 +237,11 @@
                         <option value="KZ">Kazakhstan</option>
                         <option value="KE">Kenya</option>
                         <option value="KI">Kiribati</option>
-                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KP">Korea</option>
                         <option value="KR">Korea, Republic of</option>
                         <option value="KW">Kuwait</option>
                         <option value="KG">Kyrgyzstan</option>
-                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LA">Lao</option>
                         <option value="LV">Latvia</option>
                         <option value="LB">Lebanon</option>
                         <option value="LS">Lesotho</option>
@@ -256,7 +251,7 @@
                         <option value="LT">Lithuania</option>
                         <option value="LU">Luxembourg</option>
                         <option value="MO">Macao</option>
-                        <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                        <option value="MK">Macedonia</option>
                         <option value="MG">Madagascar</option>
                         <option value="MW">Malawi</option>
                         <option value="MY">Malaysia</option>
@@ -269,7 +264,7 @@
                         <option value="MU">Mauritius</option>
                         <option value="YT">Mayotte</option>
                         <option value="MX">Mexico</option>
-                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="FM">Micronesia</option>
                         <option value="MD">Moldova, Republic of</option>
                         <option value="MC">Monaco</option>
                         <option value="MN">Mongolia</option>
@@ -294,7 +289,7 @@
                         <option value="OM">Oman</option>
                         <option value="PK">Pakistan</option>
                         <option value="PW">Palau</option>
-                        <option value="PS">Palestinian Territory, Occupied</option>
+                        <option value="PS">Palestinian Territory</option>
                         <option value="PA">Panama</option>
                         <option value="PG">Papua New Guinea</option>
                         <option value="PY">Paraguay</option>
@@ -310,12 +305,12 @@
                         <option value="RU">Russian Federation</option>
                         <option value="RW">Rwanda</option>
                         <option value="BL">Saint Barthélemy</option>
-                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                        <option value="SH">Saint Helena</option>
                         <option value="KN">Saint Kitts and Nevis</option>
                         <option value="LC">Saint Lucia</option>
                         <option value="MF">Saint Martin (French part)</option>
                         <option value="PM">Saint Pierre and Miquelon</option>
-                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="VC">Saint Vincent</option>
                         <option value="WS">Samoa</option>
                         <option value="SM">San Marino</option>
                         <option value="ST">Sao Tome and Principe</option>
@@ -331,7 +326,7 @@
                         <option value="SB">Solomon Islands</option>
                         <option value="SO">Somalia</option>
                         <option value="ZA">South Africa</option>
-                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="GS">South Georgia</option>
                         <option value="SS">South Sudan</option>
                         <option value="ES">Spain</option>
                         <option value="LK">Sri Lanka</option>
@@ -342,9 +337,8 @@
                         <option value="SE">Sweden</option>
                         <option value="CH">Switzerland</option>
                         <option value="SY">Syrian Arab Republic</option>
-                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TW">Taiwan</option>
                         <option value="TJ">Tajikistan</option>
-                        <option value="TZ">Tanzania, United Republic of</option>
                         <option value="TH">Thailand</option>
                         <option value="TL">Timor-Leste</option>
                         <option value="TG">Togo</option>
@@ -354,18 +348,17 @@
                         <option value="TN">Tunisia</option>
                         <option value="TR">Turkey</option>
                         <option value="TM">Turkmenistan</option>
-                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TC">Turks and Caicos</option>
                         <option value="TV">Tuvalu</option>
                         <option value="UG">Uganda</option>
                         <option value="UA">Ukraine</option>
                         <option value="AE">United Arab Emirates</option>
                         <option value="GB">United Kingdom</option>
                         <option value="US">United States</option>
-                        <option value="UM">United States Minor Outlying Islands</option>
                         <option value="UY">Uruguay</option>
                         <option value="UZ">Uzbekistan</option>
                         <option value="VU">Vanuatu</option>
-                        <option value="VE">Venezuela, Bolivarian Republic of</option>
+                        <option value="VE">Venezuela</option>
                         <option value="VN">Viet Nam</option>
                         <option value="VG">Virgin Islands, British</option>
                         <option value="VI">Virgin Islands, U.S.</option>
@@ -383,14 +376,16 @@
                     <input type="tel" name="usrtel">
                     
                     <label for="rate">Your Hourly Rate</label>
-                    <input type="text" name="rate">
-
-                    <a class="orangebutton" href="#">Submit</a>
+                    <input class="last_input" type="text" name="rate">
+                    
+                    <div class="profilesubmit">
+                        <a class="orangebutton" href="#">Submit</a>
+                    </div>
+                    
                 </form>
                 <div class="portfoliolinks">
                     <label for="portfolio">Enter any link(s) to online portfolios that you would like us to see.</label>
                     <input type="text" name="portfolio">
-                    <input class="choosefile" type="file">
                 </div>
             </div>
         </div>

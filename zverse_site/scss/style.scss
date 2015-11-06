@@ -5,8 +5,10 @@
 $darkgray: #464646;
 $lightgray: #ebebeb;
 $orange: #ff6d38;
+$red: #dc4126;
 $blue: #a0bbcf;
-$darkblue: #18379c;
+$darkblue: #3a7aa9;
+
 
 .clearfix {
     zoom: 1;
@@ -18,16 +20,26 @@ $darkblue: #18379c;
         clear: both;
     }
 }
+
 img{
 	display:block;
 	max-width:100%;
 	margin:0 auto;
 }
+
 a{
 	text-decoration:none;
 }
+
+.maincontentbox nav .active{
+	background: $lightgray;
+	color: $darkgray;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
 .orangebutton{
-	padding: 4%;
+	padding: 10px 10%;
 	color:white;
 	text-align:center;	
 	text-decoration:none;
@@ -38,10 +50,11 @@ a{
 		}
 
 	&:hover{
-		background: $darkgray;
-		color:$orange;
+		background: $red;
+		color:white;
 	}
 }
+
 .orangeoutline{
 	padding: 4%;
 	color:white;
@@ -54,9 +67,8 @@ a{
 		}
 
 	&:hover{
-		background: $orange;
+		background: $red;
 	}
-
 }
 
 .orangefill{
@@ -72,11 +84,13 @@ a{
 		}
 
 	&:hover{
-		background: $orange;
+		background: $red;
 	}
 }
+
 .bluebutton{
-	padding: 4%;
+	padding: 10px 10%;
+	max-height:50px;
 	color:white;
 	text-align:center;	
 	text-decoration:none;
@@ -87,514 +101,669 @@ a{
 		}
 
 	&:hover{
-		background: $darkgray;
-		color:$orange;
+		background: #213f6c;
+		color:white;
 	}
 }
+
 a{
 	text-decoration:none;
 }
 
+
 /***** SITE STYLES *************/
 /**********************************/
-body{
-	background:url(../img/zverselogoblue.svg), $blue;
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-attachment: fixed;
-	background-size:80%;
-	font-family: 'Lato', sans-serif;
 
 
-}
-header{
-	background:$darkgray;
-	padding-top:20px;
-		img{
-			float:left;
-			height:48px;
-			width:45%;
+	body{
+		background:url(../img/bg.jpg), $blue;
+		font-family: 'Lato', sans-serif;
+
+	}
+	header{
+		background:$darkgray;
+		padding-top:20px;
+		padding-bottom:20px;
+		margin-bottom:40px;
+			.layrlogo{
+				float:left;
+				width:40%;
+				max-width:150px;
+				margin-left:5%;
+					img{
+						margin:0;
+					}
+			}
+			.available{
+				float:right;
+				width:40%;
+				margin-right:5%;
+				margin-top:10px;
+				color:white;
+				font-size:.8em;
+				text-align:right;
+				letter-spacing: 2px;
+				vertical-align:baseline;
+					.availablebutton{
+						padding:4%;
+						padding-right:0;
+						display:block;
+							a{
+								display:inline-block;
+								width:19%;
+							}		
+					}
+					h3{
+						font-size:.5em;
+						display:block;
+						margin-top:0;
+						margin-bottom:5px;
+					}
+			}
+			.layrheader{
+				display:block;
+				padding-top:20px;
+				color:white;
+				text-align:center;
+				font-size:.9em;
+				clear:both;
+					h1{
+						margin-top:0;
+						margin-bottom:10px;
+					}
+			}
 			
-			vertical-align: baseline;
-			
-		}
-		.available{
-			float:right;
-			width:45%;
-			margin-right:10%;
-			color:white;
-			font-size:.8em;
-			text-align:right;
-			letter-spacing: 2px;
-			vertical-align:baseline;
-				.availablebutton{
-					padding:4%;
-					padding-right:0;
+	}
+
+	.wrapper{
+		width:90%;
+		margin:0 auto;
+	}
+
+	.desktoplayr{
+		display:none;
+	}
+
+	.maincontentbox{
+		background:$darkgray;
+		padding:5%;
+				ul{
 					display:block;
-						a{
+					list-style:none;
+					padding:0;
+					margin:0;
+						li{
 							display:inline-block;
-							width:19%;
+							width:24%;
+							text-align:center;
 						}
-						
+						a{
+							display:block;
+							color:white;
+							padding:10px,20px;
+							font-size:.8em;
+							
+								&:hover{
+										color:$orange;
+								}
+						}
 				}
-			
-				h3{
-					display:block;
-					margin-top:0;
-					margin-bottom:5px;
+				.innercontent{
+								box-shadow: 5px 5px 2px #2b2c2d;
 				}
-		}
-		.layrheader{
-			display:block;
-			padding-top:20px;
-			color:white;
-			text-align:center;
-			font-size:.9em;
-			clear:both;
-				h1{
-					margin-top:0;
-					margin-bottom:10px;
-				}
-		}
+	}
+
+	.additionalinformation{
+		box-shadow: 3px 3px 4px #68696a;
+	}
+
+	footer{
+		background:$darkgray;
+		color:$orange;
+		padding:30px 5%;		
+			ul{
+				display:block;
+				list-style:none;
+				padding:0;
+				display:block;
+				margin:0 auto;
+			}
+			li{
+				display:inline-block;
+				width:30%;
+				text-align:center;
+				vertical-align:top;		
+			}
+			a{
+				color:$orange;
+
+					&:hover{
+						color:white;
+					}
+			}
+	}
+
+
+	// ***  Mobile Styles
+	// ***	Login Mobile
+
+
+	.maincontentbox{
+		margin-bottom:40px;
+		color:white;
+		padding-bottom:40px;
+			label{
+				display:block;
+				margin-bottom:5px;
+			}
+			input{
+				width:98%;
+				margin:10px auto;
+				color:black;
+			}
+			.loginbuttons{
+				display:block;	
+				margin-top:30px;
+					.loginsubmit{
+						float:left;
+						width:47%;
+					}
+					.loginforgotpassword{
+						float:right;
+						width:47%;
+					}
+					.orangebutton{
+						display:block;
+							&:hover{
+								background:$red;
+							}
+					}
+			}
+	}
+
+
+	// ***	Profile Mobile
+
+
+	.innercontent{
+		background:white;
+		padding:4% 4% 2% 4%;
+		color:$darkgray;
+	}
+
+	.profilepicture{
+			p{
+				margin-top:5px;
+			}
+			.img{
+				border:1px solid $darkgray;
+			}
 		
-}
-.wrapper{
-	width:90%;
-	margin:0 auto;
-}
-.maincontentbox{
-	background:$darkgray;
-	padding:5%;
-	margin: 40px 0;
-		ul{
-			display:block;
-			list-style:none;
-			padding:0;
-			margin-top:0;
-			margin-bottom:15px;
+			.pictureinput{
+				display:block;
+			}
+			.choosefile{
+				-webkit-appearance: none;
+				
+	    		border: none;
+	    		color: white;
+	    		padding: 4%;
+	    		display:block;
+	    		max-width:100%;
+	    			&hover{
+	    				background-color:$red;
+	    			}
+			}
+	}
+
+	.profileinput{
+		margin-top:20px;
+			label{
+				margin-bottom:5px;
+			}
+			input{
+				margin-top:5px;
+			}
+			select{
+				margin:5px auto 15px auto;
+			}
+			.orangebutton{
+				padding:7px 10%;
+			}
+	}
+
+	.portfoliolinks{
+		color:$darkgray;
+		margin-top:20px;
+	}
+
+	.profilesubmit{
+		margin:10px 0;
+	}
+
+
+	// ***	History Mobile
+
+
+	.headings{
+		float:left;
+		width:50%;
+			ul{
 				li{
-					display:inline-block;
-					width:24%;
-					text-align:center;	
-				}
-				a{
 					display:block;
-					color:white;
-					padding:10px,20px;
-					font-size:.8em;
-						&:hover{
-							color:$orange;
-						}
+					margin-bottom:10px;
+					text-align:left;
+					width:100%;
 				}
-		}
-}
-footer{
-	background:$darkgray;
-	color:$orange;
-	padding:30px 5%;
-
-		
-		ul{
-			display:block;
-			list-style:none;
-			padding:0;
-			display:block;
-			margin:0 auto;
-		}
-		li{
-			display:inline-block;
-			width:30%;
-			text-align:center;		
-		}
-		a{
-			color:$orange;
-				&:hover{
-					color:white;
-				}
-		}
-}
-
-// ***************Begin mobile specific styles beginning with login
-
-
-.maincontentbox{
-	margin-bottom:40px;
-	color:white;
-	padding-bottom:40px;
-		label{
-			display:block;
-			margin-bottom:5px;
-		}
-		input{
-			width:98%;
-			margin:10px auto;
-			color:black;
-		}
-		.loginbuttons{
-			display:block;
-			
-			margin-top:30px;
 				.orangebutton{
-					float:left;
-					width:39%;
-						&:first-child{
-							margin-right:3%;
-						}
-						&:hover{
-							background:$blue;
-						}
+					max-width:50%;
 				}
-		}
+			}
+	}
 
-}
-// ************** mobile for profile page
-
-
-.innercontent{
-	background:white;
-	padding:4%;
-	color:$darkgray;
-}
-.profilepicture{
-	padding:8%;
-	background:$darkgray;
-		.pictureinput{
-			display:block;
-		}
-		.choosefile{
-			-webkit-appearance: none;
-			
-    		border: none;
-    		color: white;
-    		padding: 4%;
-    		display:block;
-    		max-width:100%;
-    			&hover{
-    				background-color:$darkgray;
-    			}
-		}
-}
-.profileinput{
-	margin-top:20px;
-		label{
-			margin-bottom:8px;
-		}
-		input{
-			margin-top:5px;
-		}
-		select{
-			margin:20px auto;
-		}
-		.orangebutton{
-			border:none;
-			background:$orange;
-			color:white;
-			padding:20px auto;
-			display:block;
-			margin:20px auto;
-				&:hover{
-					background:$darkgray;
-				}
-		}
-}
-.portfoliolinks{
-	color:$darkgray;
-	margin-top:20px;
-}
-
-// ******** begin history at mobile
-
-.tablecontent{
-	font-size:.8em;
-	display:block;
-		tr{
-			display:block;
-
-		}
-		td{
-			margin-right:2%;
-			width:10%;
-		}
-		.orangebutton{
-			border:none;
-			background:$orange;
-			padding:4%;
-				&:hover{
-					background:$darkgray;
-				}
-		}
-}
-
-.additionalinformation{
-	background:white;
-	padding:4%;
-	margin-bottom:30px;
-		h1{
-			font-size:1.2em;
-			margin-top:10px;
-			padding-bottom:10px;
-			display:block;
-			border-bottom: 3px solid black;
-		}
-		.logoimage{
-			float:left;
-			width:20%;
-			margin-right:5%;
-		}
-		table{
-			font-size:.9em;
-		}
-		tr{
-			margin-bottom:15px;
-		}
-		th{
-			text-align:left;
-			
-		}
-		td{
-			padding-left:5%;
-		}
-}
-
-// ******* begin index projects styles at mobile
-
-.additionalinformation{
-	color:$darkgray;
-		.overview{
-			background:$lightgray;
-			padding:4%;
-				h5{
-					margin-top:0;
-				}
-		}
-		h5{
-			margin-bottom:5px;
-		}
-		ul{
-			list-style:none;
-			padding:0;
-		}
-		.overviewbuttons{
-			margin-top:25px;
-				label{
+	.data{
+		float:left;
+		width:50%;
+			ul{
+				li{
 					display:block;
-					margin-top:25px;
+					margin-bottom:10px;
+					text-align:left;
+					width:100%;
 				}
-				.bluebutton{
-					display:block;
-					margin-top:25px;
-				}
-		}
-}
+			}
+	}
+
+	.additionalinformation{
+		background:white;
+		padding:4%;
+		margin-bottom:30px;
+			h1{
+				font-size:1.2em;
+				margin-top:10px;
+				padding-bottom:10px;
+				display:block;
+				border-bottom: 3px solid black;
+			}
+			.logoimage{
+				float:left;
+				width:20%;
+				margin-right:5%;
+			}
+			table{
+				font-size:.9em;
+			}
+			tr{
+				margin-bottom:15px;
+			}
+			th{
+				text-align:left;
+				
+			}
+			td{
+				padding-left:5%;
+			}
+	}
 
 
+	// *** Index / Projects Mobile
 
-.messagereply{
-	background:$lightgray;
-	padding:4%;
-		h5{
-			margin-top:0;
-			
-		}
-		.emailcopy{
-			margin-bottom:10px;
-			
-				input{
-					height:15px;
-					display:inline-block;
-				}
-		}
-		input{
-			display:block;
-			height:80px;
-			width:100%;
 
-		}
-}
-// ********** begin mobile billing
+	.projectinfo{
+		display:block;
+			.table_heads{
+				float:left;
+				width:50%;
+					li{
+						display:block;
+						width:100%;
+						text-align:left;
+							h3{
+								margin:20px 0;
+							}
+					}
+			}
+			.table_data{
+				float:right;
+				width:30%;
+					li{
+						display:block;
+						width:100%;
+						margin:20px 0;
+						text-align:left;
+					}
+			}
+	}
 
-.billingbuttons{
-	text-align:center;
-	color:$darkgray;
+	.projectbuttons{
+		display:block;
+			ul{
+				display:block;
+					li{
+						display:inline-block;
+						width:32.5%;
+					}
+					a{
+						background:$orange;
+						padding:10px 10%;
+						margin-right:2%;
+							&:hover{
+									background: $red;
+									color:white;
+							}
+					}
+					.declinebutton{
+						background:$darkgray;
+							&:hover{
+									color:white;
+									background:#8E8C8A;
+							}
+					}
+			}
+	}
 
-		a{
-			color:$darkgray;
-			padding:20px 10%;
-				&:hover{
-					color:$orange;
-				}
-		}
+	.additionalinformation{
+		color:$darkgray;
+			.overview{
+				background:$lightgray;
+				padding:4%;
+					h5{
+						margin-top:0;
+					}
+			}
+			h5{
+				margin-bottom:5px;
+			}
+			ul{
+				list-style:none;
+				padding:0;
+			}
+			.overviewbuttons{
+				margin-top:25px;
+					label{
+						display:block;
+						margin-top:25px;
+					}
+					a{
+						padding:10px 4%;
+					}
+					.bluebutton{
+						display:block;
+						margin-top:25px;
+					}
+			}
+	}
 
-		
-		.echeckbutton{
-			float:left;
-			width:50%;
-			background:white;
-			padding:20px 0;
-		}
-		.paypalbutton{
-			float:left;
-			width:50%;
-			background:white;
-			padding:20px 0;
-		}
-		.graybackground{
-			background:$lightgray;
-			color:$darkgray;
-}
+	.messagereply{
+		background:$lightgray;
+		padding:4%;
+			h5{
+				margin-top:0;	
+			}
+			.emailcopy{
+				margin-bottom:10px;
+					input{
+						height:15px;
+						display:inline-block;
+					}
+			}
+			input{
+				display:block;
+				height:80px;
+				width:100%;
+			}
+			.bluebutton{
+				max-height:50px;
+			}
+	}
+	.message_author{
+		margin-bottom:3px;
+	}
+	.message_date{
+		margin-top:3px;
+	}
+	.email_content{
+		margin-bottom:50px;
+	}
+	.message_artist{
+		margin-bottom:3px;
+	}
 
-	
-}
 
-.echeck{
-	background:white;
-	padding:4%;
-	color:$darkgray;
-		.orangebutton{
-			float:left;
-			width:25%;
-		}
-		img{
-			margin-top:20px;
-		}
-}
-.paypal{
-	background:white;
-	padding:4%;
-	padding-bottom:140px;
-	color:$darkgray;
-		select{
-			float:left;
-			display:block;
-			margin-bottom:20px;
-		}
-		.orangebutton{
-			width:25%;
-			float:right;
-			clear:both;
-		}
-}
+	// ***	Billing Mobile
+
+
+	.billingbuttons{
+		text-align:center;
+		color:$darkgray;
+			a{
+				color:$darkgray;
+				padding:20px 10%;
+					&:hover{
+						color:$orange;
+					}
+			}		
+			.echeckbutton{
+				float:left;
+				width:50%;
+				background:white;
+				padding:20px 0;
+			}
+			.paypalbutton{
+				float:left;
+				width:50%;
+				background:white;
+				padding:20px 0;
+			}
+			.graybackground{
+				background:$lightgray;
+				color:$darkgray;
+			}
+
+			.billingsave{
+				width:7%;
+			}	
+	}
+
+	.echeck{
+		background:white;
+		padding:4%;
+		color:$darkgray;
+			.orangebutton{
+				float:left;
+				width:25%;
+			}
+			img{
+				margin-top:20px;
+			}
+	}
+
+	.paypal{
+		background:white;
+		padding:4%;
+		padding-bottom:140px;
+		color:$darkgray;
+			select{
+				float:left;
+				display:block;
+				margin-bottom:20px;
+			}
+			.orangebutton{
+				width:25%;
+				float:right;
+				clear:both;
+			}
+	}
+
 
 @media screen and (min-width: 700px) {
+	
 
-header{
-		.layrheader{
-			padding-top:5px;
-		}
-		h1{
-			padding-bottom:20px;
-		}
-}
-.maincontentbox{
-		nav{
-			font-size:1.5em;
-		}
-}
+	.maincontentbox{
+		padding-top:20px;
+	}
+	header{
+		padding-bottom:20px;
+			.headerlogo{
+				width:60%;
+					img{
+						// margin-top: 15px;
+					}	
+			}
+			.layrheader{
+				display:none;
+			}
+			.available{
+				margin-right:5%;
+				width:17%;
+					.availablebutton{
+						a{
+							width:35%;
+						}
+
+					}
+			}		
+	}
+
+	header{
+			.layrheader{
+				padding-top:5px;
+			}
+			h1{
+				padding-bottom:20px;
+			}
+	}
+
+	.maincontentbox{
+			nav{
+				font-size:1.5em;
+			}
+	}
 
 // ********* styles for login tablet
-.maincontentbox .loginbuttons .orangebutton{
-	width:22%;
-}
+	
+	.maincontentbox{
+		max-width:500px;
+		margin:0 auto 40px auto;
+	}
+
+	.loginbuttons{
+			.loginsubmit{
+				float:left;
+				width:45%;
+			}
+			.loginforgotpassword{
+				float:right;
+				width:45%;
+			}
+	}
 
 // ********** styles for profile tablet
 
-.profilepicture{
-	float:left;
-	width:36%;
-	padding:2%;
-}
-.profileinput{
-	float:right;
-	width:50%;
-}
+	.profilepicture{
+		padding:8%;
+		background:$darkgray;
+		border:none;
+		float:left;
+		width:36%;
+		padding:2%;
+			p{
+				color:white;
+			}
+	}
 
-.portfoliolinks{
-	background:$darkgray;
-	color:white;
-	padding:2%;
-	float:left;
-	width:36%;
-		.choosefile{
-			color:white;
-		}
-}
+	.profileinput{
+		margin-top:0;
+		float:right;
+		width:50%;
+	}
+
+	.portfoliolinks{
+		background:$darkgray;
+		color:white;
+		padding:2%;
+		float:left;
+		width:36%;
+			.choosefile{
+				color:white;
+			}
+	}
 
 // ******** project tablet
 
-.innercontent{
-	font-size:1em;
-	tbody{
-		display:block;
+	.innercontent{
+		font-size:1em;
 	}
-	.tablecontent{
-			.orangebutton{
-					a{
-						padding:2%;
+
+	.projectinfo{
+		float:left;
+		width:50%;
+			.table_heads{
+					li{
+						h3{
+						margin-top:0px;
+						}
 					}
-				
 			}
-	
+			.table_data{
+				float:left;
+					li{
+						margin-top:0px;
+					}
+			}
+	}
+
+	.projectbuttons{
+		float:right;
+		width:25%;
+			ul{
+				li{
+				display:block;
+				width:100%;
+				margin-bottom:15px;
+				}
+			}
+	}
+
+	.overviewbuttons{
+		padding:20px 0;
+			label{
+				padding-top:20px;
+			}
+			a{
+				padding:10px 4%;
+			}
+			.bluebutton{
+				width:24%;
+			}
+	}
+
+	.messagereply{
+			.bluebutton{
+				width:27%;
+			}
+	}
+
+// *** History Tablet
+
+	.tablecontent{
+		font-size:1em;
 			th{
 				width:28%;
 				text-align:left;
+				padding-right:3%;
 			}
 			td{
-				width:17.65%;
+				width:19%;
+				padding-right:3%;
 			}
-			.bluebutton{
-				padding:3%;
-			}
-	}
-}
-.overviewbuttons{
-	padding:20px 0;
-		label{
-			padding-top:20px;
-		}
-		.bluebutton{
-			width:27%;
-		}
-}
-.messagereply{
-		.bluebutton{
-			width:27%;
-		}
-}
-
-// ******* styles for history
-
-.tablecontent{
-	font-size:1em;
-		th{
-			width:28%;
-			text-align:left;
-			padding-right:3%;
-		}
-		td{
-			width:19%;
-			padding-right:3%;
 		}
 	}
 
+@media screen and (min-width: 900px) {
+
 
 }
-@media screen and (min-width: 700px) {
-
-header{
-		.headerlogo{
-			width:60%;
-		}
-		.available{
-			width:17%;
-		}
-
-}
-.maincontentbox{
-	padding-top:20px;
-}
-}
-
-
 
 
 

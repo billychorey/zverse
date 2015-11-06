@@ -13,13 +13,15 @@
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+    
     <body>
+    
     <header class="clearfix">
-        <div class="headerlogo">
-            <a href="#"><img src="img/zversehorizontal.svg"></a>
+        
+        <div class="layrlogo">
+            <img src="img/layrlogo.svg">
         </div>
-        
-        
+         
         <div class="available clearfix">
             <h3>AVAILABLE</h3>
             <div class="availablebutton">
@@ -27,38 +29,35 @@
                 <a class="onoff orangeoutline orangefill" href="#">OFF</a>
             </div>
         </div>
-        <div class="layrheader">
-            <h1>LAYR ARTIST NETWORK</h1>
-
-        
+             
     </header>
+    
     <div class="wrapper">
+        
         <div class="maincontentbox">
+            
             <nav>
                 <ul>
                     <li><a href="index.html">PROJECTS</a></li>
                     <li><a href="profile.html">PROFILE</a></li>
                     <li><a href="history.html">HISTORY</a></li>
-                    <li><a href="billing.html">BILLING</a></li>
+                    <li><a class="active" href="billing.html">BILLING</a></li>
                 </ul>
             </nav>
             
-
-
             <div class="paymentoptions">
                 
-
                 <div class="billingbuttons clearfix">
                     <div class="echeckbutton graybackground payselect">
-                        <a data-page=".echeck"href="#">E Check</a>
+                        <a data-page=".echeck" href="#">E Check</a>
                     </div>
                     <div class="paypalbutton  payselect">
-                        <a  data-page=".paypal"href="#">Pay Pal</a>
+                        <a  data-page=".paypal" href="#">Pay Pal</a>
                     </div>
                 </div>
 
                 <div class="options">
-                    <div class="echeck clearfix">
+                    <div class="echeck page clearfix">
                         <form class="clearfix">
                             <label for="routing">Routing Number (1)</label>
                             <input type="text" name="routing">
@@ -70,12 +69,15 @@
                             <input type="text" name="bankname">
                             <label for="accountname">Account Name</label>
                             <input type="text" name="accountname">
-                            <a class="orangebutton" href="#">Save</a>
+                             <div class="billingsave">
+                                <a class="orangebutton" href="#">Save</a>
+                            </div>   
                         </form>
                         <img src="img/image5.jpg">
                         
                     </div>
-                    <div class="paypal">
+                    
+                    <div class="paypal page">
                         <label for="paypalemail">Pay Pal Email Address</label>
                         <input type="text" name="paypalemail">
                         <label for="currency_code"> Please select currency</label>
@@ -112,11 +114,9 @@
                 </div>
             </div>
         </div>
-
-
-
-        
+   
     </div>
+    
     <footer>
         <ul>
             <li><a href="#">HOME</a></li>
@@ -125,7 +125,7 @@
         </ul>
     </footer>
     
-        <!-- CONTENT FOR WEBSITE -->
+        
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="js/script.js"></script>
