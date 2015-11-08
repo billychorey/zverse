@@ -30,16 +30,23 @@ img{
 a{
 	text-decoration:none;
 }
+#hide{
+		color:$orange;
+		font-size:1.5em;
+	}
 
 .maincontentbox nav .active{
-	background: $lightgray;
-	color: $darkgray;
+	
+	color: white;
 	padding-bottom:10px;
 	padding-top:10px;
+	margin-top:15px;
+	border:2px solid $orange;
 }
 
 .orangebutton{
 	padding: 10px 10%;
+	font-size:.8em;
 	color:white;
 	text-align:center;	
 	text-decoration:none;
@@ -106,6 +113,18 @@ a{
 	}
 }
 
+.declinebutton{
+	background:#8E8C8A;
+	color:white
+		&:hover{
+				color:white;
+				background:#545658;
+		}
+		a{
+			color:white;
+		}
+}
+
 a{
 	text-decoration:none;
 }
@@ -153,6 +172,12 @@ a{
 								width:19%;
 							}		
 					}
+					.logout{
+						display:block;
+							a{
+								color:white;
+							}
+					}
 					h3{
 						font-size:.5em;
 						display:block;
@@ -177,6 +202,7 @@ a{
 
 	.wrapper{
 		width:90%;
+		max-width:800px;
 		margin:0 auto;
 	}
 
@@ -201,7 +227,7 @@ a{
 							display:block;
 							color:white;
 							padding:10px,20px;
-							font-size:.8em;
+							
 							
 								&:hover{
 										color:$orange;
@@ -209,7 +235,12 @@ a{
 						}
 				}
 				.innercontent{
+								margin-top:10px;
 								box-shadow: 5px 5px 2px #2b2c2d;
+								h1{
+									display:block;
+									border-bottom:2px solid black;
+								}
 				}
 	}
 
@@ -245,6 +276,10 @@ a{
 
 
 	// ***  Mobile Styles
+
+	nav{
+		font-size:.77em;
+	}
 	// ***	Login Mobile
 
 
@@ -295,8 +330,10 @@ a{
 			p{
 				margin-top:5px;
 			}
-			.img{
-				border:1px solid $darkgray;
+			img{
+				border:2px solid $darkgray;
+				max-width:75%;
+				margin:20px auto;
 			}
 		
 			.pictureinput{
@@ -307,7 +344,7 @@ a{
 				
 	    		border: none;
 	    		color: white;
-	    		padding: 4%;
+	    		
 	    		display:block;
 	    		max-width:100%;
 	    			&hover{
@@ -347,7 +384,7 @@ a{
 
 	.headings{
 		float:left;
-		width:50%;
+		width:35%;
 			ul{
 				li{
 					display:block;
@@ -359,11 +396,14 @@ a{
 					max-width:50%;
 				}
 			}
+			tr{
+				line-height:1.5em;
+			}
 	}
 
 	.data{
 		float:left;
-		width:50%;
+		width:65%;
 			ul{
 				li{
 					display:block;
@@ -378,6 +418,7 @@ a{
 		background:white;
 		padding:4%;
 		margin-bottom:30px;
+
 			h1{
 				font-size:1.2em;
 				margin-top:10px;
@@ -419,17 +460,17 @@ a{
 						width:100%;
 						text-align:left;
 							h3{
-								margin:20px 0;
+								margin:0 0 20px 0;
 							}
 					}
 			}
 			.table_data{
-				float:right;
-				width:30%;
+				float:left;
+				width:50%;
 					li{
 						display:block;
 						width:100%;
-						margin:20px 0;
+						margin:0 0 20px 0;
 						text-align:left;
 					}
 			}
@@ -437,11 +478,12 @@ a{
 
 	.projectbuttons{
 		display:block;
+		margin-bottom:40px;
 			ul{
 				display:block;
 					li{
 						display:inline-block;
-						width:32.5%;
+						width:32%;
 					}
 					a{
 						background:$orange;
@@ -453,10 +495,10 @@ a{
 							}
 					}
 					.declinebutton{
-						background:$darkgray;
+						background:#545658;
 							&:hover{
 									color:white;
-									background:#8E8C8A;
+									background:$darkgray;
 							}
 					}
 			}
@@ -464,16 +506,19 @@ a{
 
 	.additionalinformation{
 		color:$darkgray;
+		h1{
+			font-size:1.5em;
+		}
 			.overview{
 				background:$lightgray;
 				padding:4%;
 					h5{
+						font-size:1em;
 						margin-top:0;
+						margin-bottom:5px;
 					}
 			}
-			h5{
-				margin-bottom:5px;
-			}
+			
 			ul{
 				list-style:none;
 				padding:0;
@@ -493,40 +538,70 @@ a{
 					}
 			}
 	}
-
-	.messagereply{
-		background:$lightgray;
+	.currentinformation{
+		background:white;
+		h1{
+			margin-top:15px;
+			font-size:1.5em;
+		}
 		padding:4%;
-			h5{
-				margin-top:0;	
+		color:$darkgray;
+		margin-bottom:40px;
+		box-shadow: 5px 5px 2px #68696a;
+			#hide_current{
+				color:$orange;
+				font-size:1.5em;
 			}
-			.emailcopy{
-				margin-bottom:10px;
+			
+			.currentstatus{
+				font-size:1.75em;
+				color:$orange;	
+			}
+			h5{
+				margin-bottom:5px;
+				margin-top:0;
+				font-size:1em;
+				font-weight:bold;
+				margin-top:0px;
+			}
+			ul{
+				list-style:none;
+				padding:0;
+			}
+			.message_author,.message_date{
+				color:$darkblue;
+			}
+			.messagereply{
+				background:$lightgray;
+				padding:4%;
+					.emailcopy{
+						margin-bottom:10px;
+							input{
+								height:15px;
+								display:inline-block;
+							}
+					}
 					input{
-						height:15px;
-						display:inline-block;
+						display:block;
+						height:80px;
+						width:100%;
+					}
+					.bluebutton{
+						max-height:50px;
 					}
 			}
-			input{
-				display:block;
-				height:80px;
-				width:100%;
+			.message_author{
+				margin-bottom:3px;
 			}
-			.bluebutton{
-				max-height:50px;
+			.message_date{
+				margin-top:3px;
 			}
-	}
-	.message_author{
-		margin-bottom:3px;
-	}
-	.message_date{
-		margin-top:3px;
-	}
-	.email_content{
-		margin-bottom:50px;
-	}
-	.message_artist{
-		margin-bottom:3px;
+			.email_content{
+				margin-bottom:50px;
+			}
+			.message_artist{
+				margin-bottom:3px;
+			}
 	}
 
 
@@ -536,6 +611,7 @@ a{
 	.billingbuttons{
 		text-align:center;
 		color:$darkgray;
+		margin-top:10px;
 			a{
 				color:$darkgray;
 				padding:20px 10%;
@@ -620,7 +696,6 @@ a{
 						a{
 							width:35%;
 						}
-
 					}
 			}		
 	}
@@ -636,13 +711,13 @@ a{
 
 	.maincontentbox{
 			nav{
-				font-size:1.5em;
+				font-size:1.2em;
 			}
 	}
 
 // ********* styles for login tablet
 	
-	.maincontentbox{
+	.loginbox{
 		max-width:500px;
 		margin:0 auto 40px auto;
 	}
@@ -666,7 +741,7 @@ a{
 		border:none;
 		float:left;
 		width:36%;
-		padding:2%;
+		padding:4%;
 			p{
 				color:white;
 			}
@@ -681,7 +756,7 @@ a{
 	.portfoliolinks{
 		background:$darkgray;
 		color:white;
-		padding:2%;
+		padding:4%;
 		float:left;
 		width:36%;
 			.choosefile{
@@ -693,22 +768,35 @@ a{
 
 	.innercontent{
 		font-size:1em;
+			h1{
+				margin-top:0;
+			}
+	}
+
+	.currentcontent{
+		margin-top:15px;
 	}
 
 	.projectinfo{
 		float:left;
-		width:50%;
+		width:70%;
 			.table_heads{
+				float:left;
+				width:40%;
 					li{
 						h3{
 						margin-top:0px;
+						margin-bottom:16px;
 						}
 					}
 			}
 			.table_data{
 				float:left;
+				width: 60%;
+				margin-bottom:40px;
 					li{
-						margin-top:0px;
+						margin-top:2px;
+						margin-bottom:20px;
 					}
 			}
 	}
@@ -716,6 +804,7 @@ a{
 	.projectbuttons{
 		float:right;
 		width:25%;
+		margin-bottom:40px;
 			ul{
 				li{
 				display:block;

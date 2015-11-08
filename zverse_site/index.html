@@ -24,10 +24,13 @@
         
         
         <div class="available clearfix">
-            <h3>AVAILABLE</h3>
+            <h3>AVAILABLE?</h3>
             <div class="availablebutton">
-                <a class="onoff orangeoutline" href="#">ON</a>
-                <a class="onoff orangeoutline orangefill" href="#">OFF</a>
+                <a class="onoff orangeoutline" href="#">YES</a>
+                <a class="onoff orangeoutline orangefill" href="#">NO</a>
+            </div>
+            <div class="logout">
+                <a href="login.html">logout</a>
             </div>
         </div>
                
@@ -46,6 +49,7 @@
             </nav>
             
             <div class="innercontent clearfix">
+                <h1>Available Projects</h1>
                 <div class="tablecontent clearfix">
                     <div class="projectinfo clearfix">
                         <ul class="table_heads">
@@ -54,15 +58,15 @@
                             <li><h3>Range:</h3></li>
                         </ul>
                         <ul class="table_data">
-                            <li>3D Logo</li>
-                            <li>11/14/15</li>
-                            <li>10 hours</li>
+                            <li>Magnet</li>
+                            <li>11/27/15</li>
+                            <li>8 hours</li>
                         </ul>
                     </div>
                     <div class="projectbuttons">
                         <ul>
-                            <li><a href="#" class="">Details</a></li>
-                            <li><a href="#" class="">Accept</a></li>
+                            <li><a id="show" href="#availabledetails" class="orangebutton">Details</a></li>
+                            <li><a href="#" class="orangebutton">Accept</a></li>
                             <li><a href="#" class="declinebutton">Decline</a></li>
                         </ul>
                     </div>                   
@@ -83,12 +87,14 @@
                     </div>
                     <div class="projectbuttons">
                         <ul>
-                            <li><a href="#" class="">Details</a></li>
-                            <li><a href="#" class="">Accept</a></li>
+                            <li><a  id="show" href="#availabledetails" class="orangebutton">Details</a></li>
+                            <li><a href="#" class="orangebutton">Accept</a></li>
                             <li><a href="#" class="declinebutton">Decline</a></li>
                         </ul>
                     </div>                   
                 </div>
+
+
 
                 <div class="tablecontent clearfix">
                     <div class="projectinfo clearfix">
@@ -98,26 +104,112 @@
                             <li><h3>Range:</h3></li>
                         </ul>
                         <ul class="table_data">
-                            <li>3D Logo</li>
-                            <li>11/14/15</li>
-                            <li>10 hours</li>
+                            <li>LSU Memorial Tower</li>
+                            <li>12/1/15</li>
+                            <li>15 hours</li>
                         </ul>
                     </div>
                     <div class="projectbuttons">
                         <ul>
-                            <li><a href="#" class="">Details</a></li>
-                            <li><a href="#" class="">Accept</a></li>
+                            <li><a id="show" href="#availabledetails" class="orangebutton">Details</a></li>
+                            <li><a href="#" class="orangebutton">Accept</a></li>
                             <li><a href="#" class="declinebutton">Decline</a></li>
                         </ul>
                     </div>                   
-                </div>
-                
+                </div>    
             </div>
         </div>
+
         
-        <div data-page=".d1" class="additionalinformation projectsadditionalinformation">
-            
-            <h1>3D Logo</h1>
+
+
+<!-- second content box for current projects -->
+
+
+
+
+        <div class="maincontentbox">            
+            <div class="innercontent currentcontent clearfix">
+
+                <h1>Your Current Projects</h1>
+                
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>Baylor Bears Statue</li>
+                            <li>12/14/15</li>
+                            <li>8 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a id="showcurrent" href="#currentdetails" class="orangebutton">Details</a></li>
+                        </ul>
+                    </div>                   
+                </div>
+
+                
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>Georgia Logo Magnet</li>
+                            <li>11/14/15</li>
+                            <li>5 hours</li>
+                        </ul>
+                    </div>
+
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a id="showcurrent" href="#currentdetails" class="orangebutton">Details</a></li>
+                        </ul>
+                    </div>                   
+                </div>
+
+                
+                <div class="tablecontent clearfix">
+                    <div class="projectinfo clearfix">
+                        <ul class="table_heads">
+                            <li><h3>Project Title:</h3></li>
+                            <li><h3>Due Date:</h3></li>
+                            <li><h3>Range:</h3></li>
+                        </ul>
+                        <ul class="table_data">
+                            <li>Cocky Mini Statue</li>
+                            <li>11/25/15</li>
+                            <li>8 hours</li>
+                        </ul>
+                    </div>
+                    <div class="projectbuttons">
+                        <ul>
+                            <li><a id="showcurrent" href="#currentdetails" class="orangebutton">Details</a></li>
+                        </ul>
+                    </div>                   
+                </div>    
+            </div>
+        </div>
+
+
+
+<!-- Content for Available Project Details -->
+
+
+        <A NAME="availabledetails">
+        <div class="additionalinformation">
+            <div class="close">
+                <a id="hide" href="#0">X</a>
+            </div>
+            <h1>Baylor Green Helmet Magnet</h1>
             
             <div class="overview">
                 <div class="overviewtext">
@@ -126,18 +218,33 @@
                     
                     <h5>Project Outline:</h5>
 
-                    <p>Dynamically optimize fully researched results before stand-alone human capital. Completely predominate seamless synergy via interoperable methodologies. Dramatically provide access to fully researched infrastructures.</p>
+                    <p>The Baylor Green Helmet Magnet is a 3D printed, full-color refrigerator magnet that features Baylor’s green helmet design. 3.5" x 3.5"</p>
                 </div>
                 
                 <div class="overviewbuttons">
                     <a href="#" class="orangebutton">Accept</a>
                     <a href="#" class="orangebutton">Decline</a>
-                    <label for="hours">Hours</label>
+                    <label for="hours">Hourly Rate Quote</label>
                     <input type="text" name="hours">
                     <a href="#" class="bluebutton">Submit</a>
                 </div>
             </div>
+        </div>
 
+
+
+<!-- Content for Current Project Details -->
+
+
+        <A NAME="currentdetails">
+        <div class="currentinformation">
+            <div class="close">
+                <a id="hide_current" href="#0">X</a>
+            </div>
+            <h1>Baylor Bears Statue</h1>
+            <div class="currentstatus">
+                <h5>Status: In Progress</h5>
+            </div>
             <h5>Project Messages</h5>
 
             <ul>
@@ -148,7 +255,7 @@
                     <div class="message_content">
                         <p>Hey Folks,</p>
                         <p>Hope you all are doing well!</p>
-                        <p class="email_content">Checking in to see if you have an official date to launch. We will need to change over one thing when your hosting guy changes everything over - so we'll need to know that day to schedule our work. (It's a database name change so that links go to the right place - that you can't do until the URL is live).</p>
+                        <p class="email_content">Checking in to see if you have an estimated completion date. We just need an estimate to pass along to the client. If you have any questions don't hesitate to email or call!</p>
                     </div>
                 </li>
                 <li class="message_artist">
@@ -157,7 +264,7 @@
                     
                     <div class="message_content">
                         <p>Griswold,</p>
-                        <p class="email_content">We are aiming for 8/5 or 8/6 for a soft launch. I am out of the office at a work conference for the remainder of the week. Franklin and I will both be in the office starting next week and should be able to add the finishing touches before launching later in the week. I expect that payment will follow directly after the launch, but I will confirm.</p>
+                        <p class="email_content">We are aiming for 12/5 or 12/6 for a soft launch. I am out of the office at a work conference for the remainder of the week. Franklin and I will both be in the office starting next week and should be able to add the finishing touches before launching later in the week. Hope this helps!</p>
                     </div>
                 </li>
             </ul>

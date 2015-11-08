@@ -3,7 +3,7 @@
 (function( window, undefined ){
 
 
-	//This is for -- page to do --
+	//This makes the available buttons change fill --
 	$( function(){
 
 		$(".availablebutton").click(function(){
@@ -42,25 +42,66 @@
 	} );
 
 
+	$( function(){
 
-	// var detailsButton = $(".moreinfo")
+		var projectbuttons = $( ".project_buttons a" );
+		var projectselect      = $( ".projectselect" );
+		var pages          = $( ".page" );
+		
+		projectbuttons.on( "click", function( e ){
 
-	// var projectInfo = $(".additionalinformation")
+			var atag      = $( this );
+			var classname = atag.data( "page" );
 
-	// detailsButton.on("click", function( e ){
+			//changes the tab colors from gray to white when clicked
+	        projectselect.addClass( "graybackground" );
+	        atag.parent().removeClass( "graybackground" );
 
-	// var className = $( this ).data( "page");
+	        //hide the pages
+			pages.hide();
+			//show the page related to the button clicked
+			$( classname ).show();
 
-	// projectInfo.hide();
+			//prevents the page from reloading
+	        e.preventDefault();
+	    });
+
+	    $( ".current_projects a" ).trigger( "click" );
+	} );
+
+
+	// this is to display or hide details on the projects page
+
+	$(document).ready(function(){
+    	
+    	$('.additionalinformation').hide();
+		
+		$("#show").click(function(){
+	        $(".additionalinformation").show();
+	    });
+
+	    $("#hide").click(function(){
+	        $(".additionalinformation").hide();
+	    });
+    
+	});
+
+	$(document).ready(function(){
+    	
+    	$('.currentinformation').hide();
+		
+		$("#showcurrent").click(function(){
+	        $(".currentinformation").show();
+	    });
+
+	    $("#hide_current").click(function(){
+	        $(".currentinformation").hide();
+	    });
+    
+	});
+
+
 	
-	// $( projectInfo ).fadeIn( 200 );
-
-	// $( className ).show();
-
-	// e.preventDefault();
-	// });
-
-	// divName.hide();
 	
 
 
