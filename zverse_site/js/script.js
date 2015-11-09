@@ -100,7 +100,35 @@
     
 	});
 
+	$(document).ready(function(){
+    	
+		
+		$("#declineTwo").click(function(){
+	        $("#projectTwo").hide();
+	    });
 
+		$("#declineThree").click(function(){
+	        $("#projectThree").hide();
+	    });
+	   
+    
+	});
+
+
+
+
+	// **********************
+	$(document).ready(function(){
+    	
+		$("#burger").hide();
+		$("#logo").click(function(){
+	        $("#logo").hide();
+	        $("#burger").show();
+
+	    });
+
+    
+	});
 	
 	
 

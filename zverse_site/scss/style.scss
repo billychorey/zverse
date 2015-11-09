@@ -33,6 +33,7 @@ a{
 #hide{
 		color:$orange;
 		font-size:1.5em;
+		font-weight:bolder;
 	}
 
 .maincontentbox nav .active{
@@ -114,7 +115,7 @@ a{
 }
 
 .declinebutton{
-	background:#8E8C8A;
+	background:#7e838b;
 	color:white
 		&:hover{
 				color:white;
@@ -176,6 +177,7 @@ a{
 						display:block;
 							a{
 								color:white;
+								text-decoration:underline;
 							}
 					}
 					h3{
@@ -244,9 +246,7 @@ a{
 				}
 	}
 
-	.additionalinformation{
-		box-shadow: 3px 3px 4px #68696a;
-	}
+	
 
 	footer{
 		background:$darkgray;
@@ -381,6 +381,36 @@ a{
 
 	// ***	History Mobile
 
+	th {
+    	text-align: left;
+    	margin-bottom:2%;
+    	font-size:1em;
+    	font-weight:bolder;
+	}
+	td{
+		padding:2% 0;
+		font-size:.8em;
+		color:$darkgray;
+
+			a{
+				color:$darkgray;
+				text-decoration:underline;
+					&:hover{
+						color:$orange;
+					}
+			}
+	}
+	tr{
+		.blue{
+			background-color:#c6d8f2;
+		}
+
+	}
+
+
+
+
+
 
 	.headings{
 		float:left;
@@ -418,6 +448,8 @@ a{
 		background:white;
 		padding:4%;
 		margin-bottom:30px;
+		box-shadow:5px 5px 2px #68696a;
+
 
 			h1{
 				font-size:1.2em;
@@ -495,7 +527,7 @@ a{
 							}
 					}
 					.declinebutton{
-						background:#545658;
+						background:#7e838b;
 							&:hover{
 									color:white;
 									background:$darkgray;
@@ -551,6 +583,7 @@ a{
 			#hide_current{
 				color:$orange;
 				font-size:1.5em;
+				font-weight:bolder;
 			}
 			
 			.currentstatus{
