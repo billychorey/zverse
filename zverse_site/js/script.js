@@ -77,7 +77,7 @@
     	$('.additionalinformation').hide();
 		
 		$("#show").click(function(){
-	        $(".additionalinformation").show();
+	        $(".additionalinformation").fadeIn("slow");
 	    });
 
 	    $("#hide").click(function(){
@@ -91,7 +91,7 @@
     	$('.currentinformation').hide();
 		
 		$("#showcurrent").click(function(){
-	        $(".currentinformation").show();
+	        $(".currentinformation").fadeIn("slow");
 	    });
 
 	    $("#hide_current").click(function(){
@@ -101,7 +101,9 @@
 	});
 
 	$(document).ready(function(){
-    	
+    	$("#declineOne").click(function(){
+	        $("#projectOne").hide();
+	    });
 		
 		$("#declineTwo").click(function(){
 	        $("#projectTwo").hide();
@@ -109,6 +111,10 @@
 
 		$("#declineThree").click(function(){
 	        $("#projectThree").hide();
+	    });
+
+	    $("#declineDetailed").click(function(){
+	        $(".additionalinformation,#projectOne").hide();
 	    });
 	   
     

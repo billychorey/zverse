@@ -51,7 +51,7 @@
             
             <div class="innercontent clearfix">
                 <h1>Available Projects</h1>
-                <div class="tablecontent clearfix">
+                <div id="projectOne" class="tablecontent clearfix">
                     <div class="projectinfo clearfix">
                         <ul class="table_heads">
                             <li><h3>Project Title:</h3></li>
@@ -68,7 +68,7 @@
                         <ul>
                             <li><a id="show" href="#availabledetails" class="orangebutton">Details</a></li>
                             <li><a href="#" class="orangebutton">Accept</a></li>
-                            <li><a href="#" class="orangebutton declinebutton">Decline</a></li>
+                            <li><a id="declineOne"href="#" class="orangebutton declinebutton">Decline</a></li>
                         </ul>
                     </div>                   
                 </div>
@@ -203,10 +203,24 @@
 
 
 <!-- Content for Available Project Details -->
+        <!-- <A NAME="availabledetails"> -->
+        
 
 
-        <A NAME="availabledetails">
-        <div class="additionalinformation">
+
+<!-- Content for Current Project Details -->
+        <!-- <A NAME="currentdetails"> -->
+        
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </footer>
+
+        <div class="additionalinformation popover">
             <div class="close">
                 <a id="hide" href="#0">X</a>
             </div>
@@ -224,7 +238,7 @@
                 
                 <div class="overviewbuttons">
                     <a href="#" class="orangebutton">Accept</a>
-                    <a href="#" class="orangebutton">Decline</a>
+                    <a id="declineDetailed"href="#" class="orangebutton">Decline</a>
                     <label for="hours">Hourly Rate Quote</label>
                     <input type="text" name="hours">
                     <a href="#" class="bluebutton">Submit</a>
@@ -232,13 +246,7 @@
             </div>
         </div>
 
-
-
-<!-- Content for Current Project Details -->
-
-
-        <A NAME="currentdetails">
-        <div class="currentinformation">
+        <div class="currentinformation popover">
             <div class="close">
                 <a id="hide_current" href="#0">X</a>
             </div>
@@ -283,14 +291,6 @@
                 </form>
             </div>         
         </div>
-    </div>
-    <footer>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
-    </footer>
     
         <!-- CONTENT FOR WEBSITE -->
         

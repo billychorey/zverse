@@ -278,7 +278,7 @@ a{
 	// ***  Mobile Styles
 
 	nav{
-		font-size:.77em;
+		font-size:.75em;
 	}
 	// ***	Login Mobile
 
@@ -383,7 +383,7 @@ a{
 
 	th {
     	text-align: left;
-    	margin-bottom:2%;
+    	padding-bottom:10px;
     	font-size:1em;
     	font-weight:bolder;
 	}
@@ -395,14 +395,15 @@ a{
 			a{
 				color:$darkgray;
 				text-decoration:underline;
+				padding-left:5%;
 					&:hover{
 						color:$orange;
 					}
 			}
 	}
 	tr{
-		.blue{
-			background-color:#c6d8f2;
+		&.blue{
+			background-color: lighten( #c6d8f2, 10% );
 		}
 
 	}
@@ -502,7 +503,7 @@ a{
 					li{
 						display:block;
 						width:100%;
-						margin:0 0 20px 0;
+						margin:0 0 25px 0;
 						text-align:left;
 					}
 			}
@@ -703,6 +704,22 @@ a{
 				clear:both;
 			}
 	}
+
+
+.popover{
+	position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// bottom: 0;
+	overflow: scroll;
+
+	top:40px;
+	left:10%;
+	right:10%;
+	bottom:40px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.3);
+}
 
 
 @media screen and (min-width: 700px) {
