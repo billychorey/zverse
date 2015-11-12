@@ -124,17 +124,7 @@
 
 
 	// **********************
-	$(document).ready(function(){
-    	
-		$("#burger").hide();
-		$("#logo").click(function(){
-	        $("#logo").hide();
-	        $("#burger").show();
 
-	    });
-
-    
-	});
 	
 	
 
