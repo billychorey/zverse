@@ -352,7 +352,7 @@ a{
 				-webkit-appearance: none;
 				
 	    		border: none;
-	    		color: white;
+	    		
 	    		
 	    		display:block;
 	    		max-width:100%;
@@ -806,6 +806,14 @@ a{
 		float:left;
 		width:36%;
 		padding:4%;
+
+			.choosefile{
+				color:white;
+			}
+			img{
+				max-width:100%;
+				margin:0 auto 20px auto;
+			}
 			p{
 				color:white;
 			}
@@ -818,14 +826,11 @@ a{
 	}
 
 	.portfoliolinks{
+		
 		background:$darkgray;
 		color:white;
 		padding:4%;
-		float:left;
-		width:36%;
-			.choosefile{
-				color:white;
-			}
+		margin-top:15px;		
 	}
 
 // ******** project tablet

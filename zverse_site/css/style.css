@@ -396,7 +396,6 @@ nav {
 .profilepicture .choosefile {
   -webkit-appearance: none;
   border: none;
-  color: white;
   display: block;
   max-width: 100%;
 }
@@ -891,118 +890,122 @@ tr.blue {
     width: 36%;
     padding: 4%;
   }
-  /* line 809, ../scss/style.scss */
+  /* line 810, ../scss/style.scss */
+  .profilepicture .choosefile {
+    color: white;
+  }
+  /* line 813, ../scss/style.scss */
+  .profilepicture img {
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+  }
+  /* line 817, ../scss/style.scss */
   .profilepicture p {
     color: white;
   }
 
-  /* line 814, ../scss/style.scss */
+  /* line 822, ../scss/style.scss */
   .profileinput {
     margin-top: 0;
     float: right;
     width: 50%;
   }
 
-  /* line 820, ../scss/style.scss */
+  /* line 828, ../scss/style.scss */
   .portfoliolinks {
     background: #464646;
     color: white;
     padding: 4%;
-    float: left;
-    width: 36%;
-  }
-  /* line 826, ../scss/style.scss */
-  .portfoliolinks .choosefile {
-    color: white;
+    margin-top: 15px;
   }
 
-  /* line 833, ../scss/style.scss */
+  /* line 838, ../scss/style.scss */
   .innercontent {
     font-size: 1em;
   }
-  /* line 835, ../scss/style.scss */
+  /* line 840, ../scss/style.scss */
   .innercontent h1 {
     margin-top: 0;
   }
 
-  /* line 840, ../scss/style.scss */
+  /* line 845, ../scss/style.scss */
   .currentcontent {
     margin-top: 15px;
   }
 
-  /* line 844, ../scss/style.scss */
+  /* line 849, ../scss/style.scss */
   .projectinfo {
     float: left;
     width: 70%;
   }
-  /* line 847, ../scss/style.scss */
+  /* line 852, ../scss/style.scss */
   .projectinfo .table_heads {
     float: left;
     width: 40%;
   }
-  /* line 851, ../scss/style.scss */
+  /* line 856, ../scss/style.scss */
   .projectinfo .table_heads li h3 {
     margin-top: 0px;
     margin-bottom: 16px;
   }
-  /* line 857, ../scss/style.scss */
+  /* line 862, ../scss/style.scss */
   .projectinfo .table_data {
     float: left;
     width: 60%;
     margin-bottom: 40px;
   }
-  /* line 861, ../scss/style.scss */
+  /* line 866, ../scss/style.scss */
   .projectinfo .table_data li {
     margin-top: 2px;
     margin-bottom: 20px;
   }
 
-  /* line 868, ../scss/style.scss */
+  /* line 873, ../scss/style.scss */
   .projectbuttons {
     float: right;
     width: 25%;
     margin-bottom: 40px;
   }
-  /* line 873, ../scss/style.scss */
+  /* line 878, ../scss/style.scss */
   .projectbuttons ul li {
     display: block;
     width: 100%;
     margin-bottom: 15px;
   }
 
-  /* line 881, ../scss/style.scss */
+  /* line 886, ../scss/style.scss */
   .overviewbuttons {
     padding: 20px 0;
   }
-  /* line 883, ../scss/style.scss */
+  /* line 888, ../scss/style.scss */
   .overviewbuttons label {
     padding-top: 20px;
   }
-  /* line 886, ../scss/style.scss */
+  /* line 891, ../scss/style.scss */
   .overviewbuttons a {
     padding: 10px 4%;
   }
-  /* line 889, ../scss/style.scss */
+  /* line 894, ../scss/style.scss */
   .overviewbuttons .bluebutton {
     width: 24%;
   }
 
-  /* line 895, ../scss/style.scss */
+  /* line 900, ../scss/style.scss */
   .messagereply .bluebutton {
     width: 27%;
   }
 
-  /* line 902, ../scss/style.scss */
+  /* line 907, ../scss/style.scss */
   .tablecontent {
     font-size: 1em;
   }
-  /* line 904, ../scss/style.scss */
+  /* line 909, ../scss/style.scss */
   .tablecontent th {
     width: 28%;
     text-align: left;
     padding-right: 3%;
   }
-  /* line 909, ../scss/style.scss */
+  /* line 914, ../scss/style.scss */
   .tablecontent td {
     width: 19%;
     padding-right: 3%;
